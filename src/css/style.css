@@ -1,0 +1,93 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css");
+
+:root {
+    font-size: 16px;
+
+}
+
+body, h1, ul, li {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: sans-serif;
+}
+/*   container base       */
+.container {
+    width: 80%;
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+/*   navegação       */
+
+.header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+
+    position: relative;
+}
+
+.header__nav ul {
+   
+   position: absolute;
+   left: 0;
+
+   width: 100%;
+   height: 80vh;
+   margin-top: 1rem;
+
+   display: grid;
+   place-items: center;
+   justify-content: space-evenly;
+
+   text-transform: uppercase;
+
+   visibility: hidden;
+   
+}
+/*   classe setada via JS para o navbar toggle     */
+.visible {
+    visibility: visible !important;
+    background-color: turquoise;
+    animation: move 300ms ease-in-out;
+   
+}
+
+/*   animação do menu mobile aparecendo ao clicar      */
+@keyframes move {
+    from {
+        transform: translateX(-200%);  
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+/*   media querie da navegação para desktop     */
+@media screen and (min-width: 768px) {
+    .header__nav ul {
+        position: unset;
+        width: unset;
+        height: unset;
+        
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+
+        visibility: unset;
+        
+    }
+}
+
+.header__icon-bars {
+    position: absolute;
+    right: 0;
+    font-size: 1.5rem;
+}
+
+@media screen and (min-width: 768px) {
+    .header__icon-bars {
+        display: none;
+    }
+}
