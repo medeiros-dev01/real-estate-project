@@ -40,6 +40,8 @@ li {
   height: 80vh;
   margin-top: 1rem;
 
+  background: rgba(0, 0, 0, 0.233);
+
   display: grid;
   place-items: center;
   justify-content: space-evenly;
