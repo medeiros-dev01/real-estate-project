@@ -37,33 +37,38 @@ li {
   left: 0;
 
   width: 100%;
-  height: 80vh;
+  height: 60vh;
   margin-top: 1rem;
 
-  background: rgba(0, 0, 0, 0.233);
+  background: rgba(0, 0, 0, 0.541);
 
   display: grid;
   place-items: center;
   justify-content: space-evenly;
 
   text-transform: uppercase;
+  color: #ccc;
 
   visibility: hidden;
+}
+
+.header__nav ul li {
+  cursor: pointer;
 }
 /*   classe setada via JS para o navbar toggle     */
 .visible {
   visibility: visible !important;
-
+  
   animation: move 300ms ease-in-out;
 }
 
 /*   animação do menu mobile aparecendo ao clicar      */
 @keyframes move {
   from {
-    transform: translateX(-200%);
+    transform: translateY(-200%);
   }
   to {
-    transform: translateX(0);
+    transform: translateY(0);
   }
 }
 /*   media querie da navegação para desktop     */
@@ -85,6 +90,7 @@ li {
   position: absolute;
   right: 0;
   font-size: 1.5rem;
+  cursor: pointer;
 }
 
 @media screen and (min-width: 768px) {
@@ -97,7 +103,7 @@ li {
 
 .main__header {
   width: 100vw;
-  height: 80vh;
+  height: 100vh;
   background-image: url("../img/marc-olivier-jodoin-BG9oZ15a4Xk-unsplash.jpg");
   background-size: cover;
 
