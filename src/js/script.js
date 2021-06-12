@@ -7,8 +7,6 @@ btnShowMenu.addEventListener('click', showMenu);
 function showMenu() {
     
     let navbarList = document.querySelector(".header__nav ul");
-    
-    
     if(navbarList) {
         navbarList.classList.toggle("visible");
     }
