@@ -14,6 +14,8 @@ li {
   padding: 0;
   box-sizing: border-box;
   list-style: none;
+  overflow: hidden;
+  color: #ccc;
 }
 /*   container base       */
 .container {
@@ -25,6 +27,7 @@ li {
 /*   navegação       */
 
 .header {
+  height: 8vh;
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
@@ -39,8 +42,8 @@ li {
   left: 0;
   width: 100vh;
   height: 100vh;
-  background: rgba(0, 0, 0, 0.541);
-  color: #ccc;
+  background: rgba(0, 0, 0, 0.9);
+  
 
   display: flex;
   flex-direction: column;
@@ -64,7 +67,29 @@ li {
   padding-bottom: 1rem;
   border-bottom: 1px solid #ccc;
   font-size: 1.2rem;
+  font-weight: 800;
+  text-shadow: 2px 2px 2px #000;
   
+  
+}
+
+@media screen and (min-width: 768px) {
+  .header__nav ul li {
+    padding-bottom: 0;
+    
+  }
+}
+
+.header__nav ul li:hover {
+  border-bottom: 1px solid #948f8fb7;
+  transition: all 3s ease-in-out;
+  color: #a19c9c;
+}
+
+@media screen and (min-width: 768px) {
+  .header__nav ul li {
+    border-bottom: unset;
+  }
 }
 /*   classe setada via JS para o navbar toggle     */
 .visible {
@@ -102,11 +127,13 @@ li {
   right: 0;
   font-size: 1.5rem;
   cursor: pointer;
+  
 }
 
 @media screen and (min-width: 768px) {
   .header__icon-bars {
     display: none;
+
   }
 }
 
@@ -122,11 +149,24 @@ li {
   top: 0;
 
   z-index: 0;
+
+  animation: images 20s ease-in-out infinite;
+  transition: background 0.5s ease-in-out;
 }
+
+@keyframes images {
+  33%{
+    background-image: url("../img/fineas-anton-VV_AtjLknlA-unsplash.jpg");
+  }
+  66% {
+    background-image: url("../img/mojibullah-shahir-SXeu2Cps5vM-unsplash.jpg");
+  }
+}
+
 .main__header-opacity {
   height: 100%;
   width: 100%;
-  background: linear-gradient(rgba(87, 87, 87, 0.719), #000);
+  background: linear-gradient(rgba(87, 87, 87, 0.658), rgba(0, 0, 0, 0.938));
 
   opacity: 0.8;
 }
