@@ -1,7 +1,9 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap');
 
 :root {
   font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
 }
 
 body,
@@ -12,7 +14,6 @@ li {
   padding: 0;
   box-sizing: border-box;
   list-style: none;
-  font-family: sans-serif;
 }
 /*   container base       */
 .container {
@@ -34,26 +35,35 @@ li {
 
 .header__nav ul {
   position: absolute;
-  left: 0;
-
-  width: 100%;
-  height: 60vh;
-  margin-top: 1rem;
-
+  top: 0;
+  width: 80%;
+  height: 100vh;
   background: rgba(0, 0, 0, 0.541);
-
-  display: grid;
-  place-items: center;
-  justify-content: space-evenly;
-
-  text-transform: uppercase;
   color: #ccc;
 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  padding-left: 2rem;
   visibility: hidden;
+  overflow: visible;
+}
+
+@media screen and (min-width: 768px ) {
+  .header__nav ul {
+    background: none;
+    color: black;
+  }
 }
 
 .header__nav ul li {
   cursor: pointer;
+  margin-top: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #ccc;
+  font-size: 1.2rem;
+  text-transform: capitalize;
 }
 /*   classe setada via JS para o navbar toggle     */
 .visible {
