@@ -34,6 +34,8 @@ li {
 
   position: relative;
   z-index: 1;
+
+  
 }
 
 .header__nav ul {
@@ -51,7 +53,7 @@ li {
 
   padding-left: 2rem;
   visibility: hidden;
-  overflow: visible;
+
 }
 
 @media screen and (min-width: 768px ) {
@@ -144,13 +146,15 @@ li {
   height: 100vh;
   background-image: url("../img/marc-olivier-jodoin-BG9oZ15a4Xk-unsplash.jpg");
   background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 
   position: absolute;
   top: 0;
 
   z-index: 0;
 
-  animation: images 20s ease-in-out infinite;
+  animation: images 30s ease-in-out infinite;
   transition: background 0.5s ease-in-out;
 }
 
