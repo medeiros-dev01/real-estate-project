@@ -1,0 +1,133 @@
+/*   navegação       */
+
+.header {
+    height: 8vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  
+    position: relative;
+    z-index: 1;
+  }
+  
+  .header__nav ul {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vh;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.955);
+    
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  
+    padding-left: 2rem;
+    visibility: hidden;
+    overflow: hidden;
+  
+  }
+  
+  @media screen and (min-width: 768px ) {
+    .header__nav ul {
+      background: none;
+      color: black;
+    }
+  }
+  
+  #header-links-social {
+    border-bottom: none;
+  }
+  
+  @media screen and (min-width:768px){
+    #header-links-social {
+      display: none;
+    }
+  }
+  
+  #header-links-social i {
+    font-size: 2.5rem;
+    margin-right: 1rem;
+  }
+  
+  .header__nav ul li {
+    cursor: pointer;
+    margin-top: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #ccc;
+    font-size: 1.2rem;
+    font-weight: 800;
+    text-shadow: 2px 2px 2px #000;
+    
+  }
+  
+  @media screen and (min-width: 768px) {
+    .header__nav ul li {
+      padding-bottom: 0;
+      margin-top: unset;
+    }
+  }
+  
+  .header__nav ul li:hover {
+    border-bottom: 1px solid #948f8fb7;
+    transition: all 3s ease-in-out;
+    color: #a19c9c;
+  }
+  
+  .header__nav ul li a {
+    color: unset;
+    text-decoration:none ;
+  }
+  
+  @media screen and (min-width: 768px) {
+    .header__nav ul li {
+      border-bottom: unset;
+    }
+  }
+  /*   classe setada via JS para o navbar toggle     */
+  .visible {
+    visibility: visible !important;
+    overflow: hidden !important;
+    animation: move 300ms ease-in-out;
+  }
+  
+  /*   animação do menu mobile aparecendo ao clicar      */
+  @keyframes move {
+    from {
+      transform: translateY(-200%);
+    }
+    to {
+      transform: translateY(0);
+    }
+  }
+  /*   media querie da navegação para desktop     */
+  @media screen and (min-width: 768px) {
+    .header__nav ul {
+      position: unset;
+      width: unset;
+      height: unset;
+  
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+  
+      visibility: unset;
+    }
+  }
+  
+  .header__icon-bars {
+    position: absolute;
+    right: 0;
+    font-size: 1.5rem;
+    cursor: pointer;
+    
+  }
+  
+  @media screen and (min-width: 768px) {
+    .header__icon-bars {
+      display: none;
+  
+    }
+  }
+  
