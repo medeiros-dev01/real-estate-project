@@ -25,7 +25,7 @@
   
     padding-left: 2rem;
     visibility: hidden;
-    overflow: hidden;
+
   
   }
   
@@ -88,7 +88,6 @@
   /*   classe setada via JS para o navbar toggle     */
   .visible {
     visibility: visible !important;
-    overflow: hidden !important;
     animation: move 300ms ease-in-out;
   }
   
