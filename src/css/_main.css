@@ -2,7 +2,7 @@
 
 .main__header {
   width: 100%;
-  height: 90vh;
+  height: 95vh;
   background-image: url("../img/marc-olivier-jodoin-BG9oZ15a4Xk-unsplash.jpg");
 
   background-size: cover;
@@ -37,7 +37,7 @@
 
 .main__section {
   width: 80%;
-  height: 45vh;
+  height: 56vh;
 
   margin: 2rem auto;
   position: relative;
@@ -95,12 +95,18 @@
 }
 
 .main__section-form-search input {
-  width: 20rem;
+  width: 10rem;
+  max-width: 100vw;
   height: 2rem;
   border-radius: 5px;
   border: 1px solid black;
   box-shadow: 5px 3px 5px black;
   margin-bottom: 1rem;
+}
+@media screen and (min-width: 768px) {
+  .main__section-form-search input {
+    width: 20rem;
+  }
 }
 
 .main__section-form-search input[type=button] {
