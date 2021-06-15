@@ -66,15 +66,23 @@
 }
 
 .header__nav ul li:hover {
-  border-bottom: 1px solid #948f8fb7;
+
   transition: all 500ms ease-in-out;
   color: rgb(223, 219, 219);
+  
 }
 
 .header__nav ul li a {
   color: unset;
   text-decoration: none;
+  transition: all 1s ease;
 }
+
+.header__nav ul li a:hover {
+  border-bottom: 1px solid black;
+  font-size: 1.3rem;
+}
+
 
 @media screen and (min-width: 768px) {
   .header__nav ul li {
