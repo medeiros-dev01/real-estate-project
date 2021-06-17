@@ -1,0 +1,28 @@
+.article {
+    position: relative;
+    height: 30rem;
+}
+
+.article__card {
+    width: 20rem;
+    height: 25rem;
+    color: black;
+
+    border: 1px solid black;
+
+    display: grid;
+
+}
+
+.article__card div {
+    display: grid;
+    
+    place-items: center;
+
+    width: 25ch;
+    margin: 0 auto;
+}
+
+.article__card-title {
+    justify-self: end;
+}
