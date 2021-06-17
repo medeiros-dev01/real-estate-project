@@ -1,5 +1,6 @@
 @import "./../css/_header-nav.css";
 @import "./../css/_main.css";
+@import "./../css/_article.css";
 
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css");
 
@@ -28,7 +29,7 @@ li {
   color: var(--color-text);
 }
 body {
-  overflow: hidden;
+  overflow-y: visible;
   
 }
 h1 {
