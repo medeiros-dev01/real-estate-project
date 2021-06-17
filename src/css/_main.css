@@ -6,6 +6,7 @@
   background-image: url("../img/marc-olivier-jodoin-BG9oZ15a4Xk-unsplash.jpg");
 
   background-size: cover;
+  object-fit: cover;
 
   position: absolute;
   top: 0;
