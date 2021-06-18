@@ -2,6 +2,11 @@
     position: relative;
 }
 
+.article h2 {
+    margin: 0;
+    margin-top: 5rem;
+}
+
 @media screen and (min-width:768px) {
     .article__box-cards {
         display: grid;
