@@ -69,11 +69,11 @@
   color: unset;
   text-decoration: none;
   letter-spacing: 2px;
-  
+  transition: .5s ease-in-out;
 }
 
 .header__nav ul li a:hover {
-  transition: .5s ease-in-out;
+  
   color: white;
   text-shadow: 2px 3px 3px black;
 

@@ -1,4 +1,5 @@
-   
+
+//array com os dados dos cards de imoveis em destaque
 
 const posts = [
     {
@@ -14,13 +15,15 @@ const posts = [
         text: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore, corrupti. Reprehenderit autem rerum 2."
     },
     {
-        id: 2,
+        id: 3,
         image: "./img/paul-volodin-IH-JP5szbAY-unsplash.jpg",
         title: "title 3",
         text: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore, corrupti. Reprehenderit autem rerum 2."
     },
     
 ];
+
+// mostrando dados na página
 
     let card = document.getElementById("card");
     

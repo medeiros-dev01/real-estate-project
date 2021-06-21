@@ -12,6 +12,22 @@ function showMenu() {
     }
 }
 
+    let input = document.getElementById("input-search");
 
+    input.addEventListener('focus', hideInput  );
+    input.addEventListener('focusout', showInput  );
 
+    function hideInput() {
+        let label = document.getElementById("label-search");
+
+        label.style.display = "none";
+    }
+
+    function showInput() {
+        let label = document.getElementById("label-search");
+
+        label.style.display = "unset";
+    }
+
+    
 
