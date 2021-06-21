@@ -12,6 +12,8 @@ function showMenu() {
     }
 }
 
+//escondendo e mostrando o input do campo de pesquisa
+
     let input = document.getElementById("input-search");
 
     input.addEventListener('focus', hideInput  );
