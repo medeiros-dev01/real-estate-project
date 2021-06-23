@@ -14,9 +14,14 @@
 
   --font-logo: "Caveat", cursive;
 
-  --color-primary: rgba(16, 28, 61, 0.925);
+  --color-primary: #014023;
   --color-text: #ccc;
 }
+
+/*     
+paleta de cores:   
+https://stock.adobe.com/pt/239365156/
+*/
 
 body,
 h1,

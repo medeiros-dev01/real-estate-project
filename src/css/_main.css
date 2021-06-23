@@ -1,5 +1,9 @@
 /* header imagem de fundo         */
 
+main {
+  height: 85vh;
+}
+
 .main__header {
   width: 100%;
   height: 95vh;

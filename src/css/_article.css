@@ -51,7 +51,8 @@ h2 {
 }
 
 .article__card:hover {
-    box-shadow: 5px 5px 5px black;
+    box-shadow: 8px 8px 5px black;
+    transform: scale(101%);
 }
 
 .article__card img {
