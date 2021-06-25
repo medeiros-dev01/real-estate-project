@@ -24,12 +24,13 @@
 
   padding-left: 2rem;
   visibility: hidden;
+
 }
 
 @media screen and (min-width: 768px) {
   .header__nav ul {
     background: none;
-    color: black;
+    
   }
 }
 
@@ -69,7 +70,7 @@
   color: unset;
   text-decoration: none;
   letter-spacing: 2px;
-  transition: .5s ease-in-out;
+  color: var(--color-brand);
 }
 
 .header__nav ul li a:hover {
@@ -77,6 +78,12 @@
   color: white;
   text-shadow: 2px 3px 3px black;
 
+}
+
+@media screen and (min-width: 768px) {
+  .header__nav ul li a:hover {
+    transition: all .6s ease-in-out;
+  }
 }
 
 
@@ -121,6 +128,7 @@
   right: 0;
   font-size: 1.5rem;
   cursor: pointer;
+  color: var(--color-brand);
 }
 
 @media screen and (min-width: 768px) {

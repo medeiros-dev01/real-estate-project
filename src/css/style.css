@@ -1,6 +1,7 @@
 @import "./../css/_header-nav.css";
 @import "./../css/_main.css";
 @import "./../css/_article.css";
+@import "./../css/_contact.css";
 
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css");
 
@@ -14,14 +15,10 @@
 
   --font-logo: "Caveat", cursive;
 
-  --color-primary: #014023;
-  --color-text: #ccc;
+  --color-primary: #800000;
+  --color-brand: #ebc10a;
+  --color-text: rgb(204, 204, 204);
 }
-
-/*     
-paleta de cores:   
-https://stock.adobe.com/pt/239365156/
-*/
 
 body,
 h1,
@@ -42,6 +39,7 @@ h1 {
   font-size: 2.5rem;
   letter-spacing: 5px;
   transition: all 500ms ease-in;
+  color: var(--color-brand);
 }
 
 h1:hover {
