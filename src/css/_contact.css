@@ -1,10 +1,32 @@
 .section__contact {
-    background: black;
-    width: 100vw !important;
-    max-width: 100% !important;
+    background-color: black;
+    width: 100vw;
 }
+
+.section__contact h2 {
+    width: 80%;
+    margin: 0 auto;
+    padding: 1.5rem 0;
+}
+
+
 .section__contact-form {
     width: 50%;
-    margin: 0 auto;
+    margin: 2rem auto;
     color: colar;
+}
+
+.section__contact-social  {
+    background-color: white;
+    
+}
+
+.section__contact-social h3 {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.section__contact-social div {
+    width: 80%;
+    margin: 0 auto;
 }
