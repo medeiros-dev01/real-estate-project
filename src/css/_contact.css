@@ -1,0 +1,10 @@
+.section__contact {
+    background: black;
+    width: 100vw !important;
+    max-width: 100% !important;
+}
+.section__contact-form {
+    width: 50%;
+    margin: 0 auto;
+    color: colar;
+}
