@@ -9,7 +9,6 @@ main {
   height: 95vh;
   background-image: url("../img/fineas-anton-VV_AtjLknlA-unsplash.jpg");
 
-  background-size: contain;
   object-fit: cover;
 
   position: absolute;
