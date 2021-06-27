@@ -7,27 +7,16 @@ main {
 .main__header {
   width: 100%;
   height: 95vh;
-  background-image: url("../img/marc-olivier-jodoin-BG9oZ15a4Xk-unsplash.jpg");
+  background-image: url("../img/fineas-anton-VV_AtjLknlA-unsplash.jpg");
 
-  background-size: cover;
+  background-size: contain;
   object-fit: cover;
 
   position: absolute;
   top: 0;
 
   z-index: 0;
-
-  animation: images 40s ease ;
   
-}
-
-@keyframes images {
-  33% {
-    background-image: url("../img/fineas-anton-VV_AtjLknlA-unsplash.jpg");
-  }
-  66% {
-    background-image: url("../img/mojibullah-shahir-SXeu2Cps5vM-unsplash.jpg");
-  }
 }
 
 .main__header-opacity {
