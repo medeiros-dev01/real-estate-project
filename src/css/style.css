@@ -32,6 +32,7 @@ li {
 }
 body {
   overflow-y: visible;
+  overflow-x: hidden;
   
 }
 h1 {
