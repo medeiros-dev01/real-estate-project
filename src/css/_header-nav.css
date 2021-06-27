@@ -63,6 +63,9 @@
   .header__nav ul li {
     padding-bottom: 0;
     margin-top: unset;
+
+    margin-right: 2rem;
+  
   }
 }
 

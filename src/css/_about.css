@@ -1,11 +1,14 @@
 .section__about {
     color: black;
+    width: 80%;
+    margin: 0 auto;
 }
 
 @media screen and (min-width:768px) {
     .section__about article {
-        width: 70ch;
+        width: 60ch;
         margin: 0 auto;
+        
     }
 }
 

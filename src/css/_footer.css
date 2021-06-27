@@ -1,0 +1,12 @@
+.section__footer {
+    background: #000;
+    height: 10vh;
+    margin-top: 1.5rem;
+
+    display: grid;
+    place-items: center;
+}
+
+.section__footer p {
+    margin: 0;
+}
