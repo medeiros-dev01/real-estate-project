@@ -1,0 +1,27 @@
+.section__about {
+    color: black;
+}
+
+@media screen and (min-width:768px) {
+    .section__about article {
+        width: 70ch;
+        margin: 0 auto;
+    }
+}
+
+.section__about h2 {
+    padding: 1.5rem 0;
+}
+
+.section__about p {
+    line-height: 25px;
+
+    font-size: 1.2rem;
+    font-style: italic;
+    font-weight: 500;
+}
+
+.section__about span {
+    font-weight: bolder;
+    font-size: 1.2rem;
+}

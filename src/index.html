@@ -1,118 +1,139 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Projeto</title>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="./css/style.css" />
-  </head>
-  <body>
-    <header class="container header">
-      <h1>RE</h1>
-      <nav class="header__nav">
-        <ul id="header-links">
-          <li><a href="#inicio">Inicio</a></li>
-          <li><a href="#contato">Contato</a></li>
-          <li><a href="#sobre">Sobre</a></li>
+  <title>Projeto</title>
 
-          <li id="header-links-social">
-            <i class="fab fa-facebook-square"
-              ><a href="www.facebook.com"></a
-            ></i>
-            <i class="fab fa-instagram-square"
-              ><a href="www.facebook.com"></a
-            ></i>
-            <i class="fab fa-youtube-square"><a href="www.facebook.com"></a></i>
-          </li>
-        </ul>
-        <article header__nav-social></article>
-      </nav>
-      <div class="header__icon-bars">
-        <i id="icon-bars" class="fas fa-bars"></i>
-      </div>
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+  <header class="container header">
+    <h1>RE</h1>
+    <nav class="header__nav">
+      <ul id="header-links">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#contato">Contato</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+
+        <li id="header-links-social">
+          <i class="fab fa-facebook-square"><a href="www.facebook.com"></a></i>
+          <i class="fab fa-instagram-square"><a href="www.facebook.com"></a></i>
+          <i class="fab fa-youtube-square"><a href="www.facebook.com"></a></i>
+        </li>
+      </ul>
+      <article header__nav-social></article>
+    </nav>
+    <div class="header__icon-bars">
+      <i id="icon-bars" class="fas fa-bars"></i>
+    </div>
+  </header>
+  <main>
+    <header class="main__header">
+      <div class="main__header-opacity"></div>
     </header>
-    <main>
-      <header class="main__header">
-        <div class="main__header-opacity"></div>
-      </header>
-      <section class="main__section">
-        <img
-          src="./img/Logo.png"
-          alt="Imagem predio by Imagem de Gordon Johnson por Pixabay"
-          title="Imagem predio by Imagem de Gordon Johnson por Pixabay"
-        />
-        <p>Soluções Imobiliárias</p>
-      </section>
-
-      <section class="main__section-form">
-        <form class="main__section-form-search">
-          <label id="label-search" for="input-search">Procurar</label>
-          <input id="input-search" type="text" name="search" />
-          <input type="button" value="Buscar" />
-        </form>
-      </section>
-    </main>
-
-    <article class="container article">
-      <h2>Destaques</h2>
-
-      <section id="card" class="article__box-cards">
-        
-
-      </section>
-    </article>
-
-    <section class=" section__contact">
-        <h2>Contato</h2>
-
-        <section class="section__contact-box">
-          <div class="section__contact-form">
-            <form>
-              
-                <label for="email">E-mail:</label>
-                <input type="email" name="email" id="email">
-              
-                <label for="fone">Telefone:</label>
-                <input type="tel" name="fone" id="fone">
-             
-                <label for="text">Mensagem:</label>
-                <textarea name="text" id="text"></textarea>
-
-                <button type="submit">Enviar</button>
-            </form>
-          </div>  
-          <div class="section__contact-social">
-              <h3>Visite nossas redes sociais</h3>
-
-              <div>
-                  <ul>
-                    <li>
-                      <a href="https://www.google.com" ><i class="fab fa-facebook-square"></i></a>
-                    </li>
-                    <li>
-                      <a href="https://instagram.com"><i class="fab fa-instagram-square"</i></i></a>
-                    </li>
-                    <li>
-                      <a href="https://youtube.com"><i class="fab fa-youtube-square"></i></a>
-                    </li>
-                    <li>
-                      <a href=""><i class="fab fa-whatsapp-square"></i></a>
-                    </li>
-                  </ul>
-                
-              </div>
-          </div>
-        </section>
+    <section class="main__section">
+      <img src="./img/Logo.png" alt="Imagem predio by Imagem de Gordon Johnson por Pixabay"
+        title="Imagem predio by Imagem de Gordon Johnson por Pixabay" />
+      <p>Soluções Imobiliárias</p>
     </section>
-    <footer>
-      <p> &copy; MedeirosDev</p>
-    </footer>
-  
 
-    <script src="./js/script.js"></script>
-    <script src="./js/data.js"></script>
-  </body>
+    <section class="main__section-form">
+      <form class="main__section-form-search">
+        <label id="label-search" for="input-search">Procurar</label>
+        <input id="input-search" type="text" name="search" />
+        <input type="button" value="Buscar" />
+      </form>
+    </section>
+  </main>
+
+  <article class="container article">
+    <h2>Destaques</h2>
+
+    <section id="card" class="article__box-cards">
+
+
+    </section>
+  </article>
+
+  <section class=" section__contact">
+    <h2>Contato</h2>
+
+    <section class="section__contact-box">
+      <div class="section__contact-form">
+        <form>
+
+          <label for="email">E-mail:</label>
+          <input type="email" name="email" id="email">
+
+          <label for="fone">Telefone:</label>
+          <input type="tel" name="fone" id="fone">
+
+          <label for="text">Mensagem:</label>
+          <textarea name="text" id="text"></textarea>
+
+          <button type="submit">Enviar</button>
+        </form>
+      </div>
+      <div class="section__contact-social">
+        <h3>Visite nossas redes sociais</h3>
+
+        <div>
+          <ul>
+            <li>
+              <a href="https://www.google.com"><i class="fab fa-facebook-square"></i></a>
+            </li>
+            <li>
+              <a href="https://instagram.com"><i class="fab fa-instagram-square" </i></i></a>
+            </li>
+            <li>
+              <a href="https://youtube.com"><i class="fab fa-youtube-square"></i></a>
+            </li>
+            <li>
+              <a href=""><i class="fab fa-whatsapp-square"></i></a>
+            </li>
+          </ul>
+
+        </div>
+      </div>
+    </section>
+  </section>
+
+  <section class="container section__about">
+    <h2>Sobre</h2>
+
+    <article>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis molestiae hic tempore quibusdam dicta, alias maiores distinctio ex. Autem voluptas dolor similique neque quisquam ad ab veniam quidem quos. Id! Lorem ipsum, dolor sit amet consectetur adipisicing elit. At, corporis! Molestiae atque non fuga facere ea minima, maxime nisi aut rem nulla molestias illum modi.</p>
+
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex reiciendis qui dolor fugiat ut provident suscipit consequatur ipsam cumque harum iusto quaerat ad blanditiis consequuntur soluta quasi dignissimos, eos ea!</p>
+
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa similique aut voluptatem dicta vel cum hic adipisci ullam blanditiis expedita itaque, ipsum rerum veritatis illo possimus perferendis eaque? Voluptate qui corrupti id libero quo magnam velit natus asperiores?</p>
+
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa similique aut voluptatem dicta vel cum hic adipisci ullam blanditiis expedita itaque, fugiat ratione ab consectetur nesciunt perspiciatis autem quos culpa.</p>
+
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id tempore, corporis nobis amet ratione perferendis nisi nulla libero provident exercitationem quam a? Omnis magni eligendi itaque nostrum impedit, asperiores nam.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem tempora veniam dolor, alias quo eligendi aliquam impedit, totam assumenda ipsum quis. Omnis odit amet pariatur rem iste earum quasi similique.
+      
+      </p>
+
+      <span>
+        RE Soluções Imobiliárias.
+      </span>
+    </article>
+  </section>
+
+  <footer>
+    <p> &copy; MedeirosDev</p>
+  </footer>
+
+
+  <script src="./js/script.js"></script>
+  <script src="./js/data.js"></script>
+</body>
+
 </html>
