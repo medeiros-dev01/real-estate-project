@@ -1,35 +1,32 @@
 // toggle menu responsivo
-let btnShowMenu = document.getElementById('icon-bars');
+let btnShowMenu = document.getElementById("icon-bars");
 
-btnShowMenu.addEventListener('click', showMenu);
+btnShowMenu.addEventListener("click", showMenu);
 
-//função que mostra e esconde o menu 
+//função que mostra e esconde o menu
 function showMenu() {
-    
-    let navbarList = document.querySelector(".header__nav ul");
-    if(navbarList) {
-        navbarList.classList.toggle("visible");
-    }
+  let navbarList = document.querySelector(".header__nav ul");
+  if (navbarList) {
+    navbarList.classList.toggle("visible");
+
+    //alterando icone do menu mobile
+    let icon = document.getElementById("icon-bars");
+    icon.classList.toggle("fa-times");
+  }
 }
 
 //escondendo e mostrando o input do campo de pesquisa
 
-    let input = document.getElementById("input-search");
+let input = document.getElementById("input-search");
 
-    input.addEventListener('focus', hideInput  );
-    input.addEventListener('focusout', showInput  );
+input.addEventListener("focus", hideInput);
+input.addEventListener("focusout", showInput);
 
-    function hideInput() {
-        let label = document.getElementById("label-search");
-
-        label.style.display = "none";
-    }
-
-    function showInput() {
-        let label = document.getElementById("label-search");
-
-        label.style.display = "unset";
-    }
-
-    
-
+function hideInput() {
+  let label = document.getElementById("label-search");
+  label.style.display = "none";
+}
+function showInput() {
+  let label = document.getElementById("label-search");
+  label.style.display = "unset";
+}

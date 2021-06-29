@@ -4,7 +4,6 @@
 @import "./../css/_contact.css";
 
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css");
-
 /*  fontes    */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&display=swap");
@@ -14,12 +13,10 @@
   font-family: "Montserrat", sans-serif;
 
   --font-logo: "Caveat", cursive;
-
   --color-primary: #800000;
   --color-brand: #ebc10a;
   --color-text: rgb(204, 204, 204);
 }
-
 body,
 h1,
 ul,
@@ -33,7 +30,6 @@ li {
 body {
   overflow-y: visible;
   overflow-x: hidden;
-  
 }
 h1 {
   font-family: var(--font-logo);
@@ -58,3 +54,4 @@ h1:hover {
   max-width: 90%;
   margin: 0 auto;
 }
+
