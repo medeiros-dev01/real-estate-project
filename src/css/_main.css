@@ -15,7 +15,6 @@ main {
   top: 0;
 
   z-index: 0;
-  
 }
 
 .main__header-opacity {
@@ -73,16 +72,13 @@ main {
 
   display: grid;
   place-items: center;
-
 }
-
 
 .main__section-form-search label {
   position: absolute;
   color: #000;
-  margin-left: .5rem;
-  margin-top: .5rem;
-  
+  margin-left: 0.5rem;
+  margin-top: 0.5rem;
 }
 
 .main__section-form-search input {
@@ -100,15 +96,15 @@ main {
   }
 }
 
-.main__section-form-search input[type=button] {
-  display: block;  
+.main__section-form-search input[type="submit"] {
+  display: block;
   width: 6rem;
   height: 3rem;
   margin: 0 auto;
 
   background: transparent;
   color: var(--color-brand);
-  box-shadow: 2px 2px 2px black ;
+  box-shadow: 2px 2px 2px black;
   text-shadow: 3px 2px 2px black;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -123,13 +119,13 @@ main {
 }
 
 @media screen and (min-width: 768px) {
-  .main__section-form-search input[type=button]{
+  .main__section-form-search input[type="button"] {
     width: 10rem;
   }
 }
 
-.main__section-form-search input[type=button]:hover {
-  background: var(--color-primary); 
+.main__section-form-search input[type="button"]:hover {
+  background: var(--color-primary);
   box-shadow: 5px 7px 5px black;
   color: #fff;
 }

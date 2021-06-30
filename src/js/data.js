@@ -21,29 +21,9 @@ const posts = [
         image: "./img/paul-volodin-IH-JP5szbAY-unsplash.jpg",
         title: "Imóvel 3",
         text: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore, corrupti. Reprehenderit autem rerum 2.",
-        location: "Ingleses"
+        location: "Estreito"
     },
-    {
-        id: 4,
-        image: "./img/marc-olivier-jodoin-BG9oZ15a4Xk-unsplash.jpg",
-        title: "Imóvel 4",
-        text: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore, corrupti. Reprehenderit autem rerum.",
-        location: "Barreiros"
-    },
-    {
-        id: 5,
-        image: "./img/mojibullah-shahir-SXeu2Cps5vM-unsplash.jpg",
-        title: "Imóvel 5",
-        text: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore, corrupti. Reprehenderit autem rerum 2.",
-        location: "Centro"
-    },
-    {
-        id: 6,
-        image: "./img/sam-li-NBN5GvTDa1E-unsplash.jpg",
-        title: "Imóvel 6",
-        text: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore, corrupti. Reprehenderit autem rerum 2.",
-        location: "Trindade"
-    },
+    
     
 ];
 
@@ -70,6 +50,26 @@ const posts = [
             </section>
         `
     }
+
+    // campo de pesquisa
+
+    let btn = document.getElementById("search-btn");
+
+    document.addEventListener('click', search);
+
+    function search() {
+        let inputSearch = document.getElementById("input-search").value;
+
+        let results = posts.filter( function(post) {
+            return post.location === inputSearch;
+            
+        });
+
+        console.log(results)
+        
+    }
+
+    
 
 
   
